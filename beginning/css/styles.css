@@ -223,3 +223,45 @@ footer {
 footer img {
     width: 35px;
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+    header {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero {
+    
+    }
+
+    .feature-container {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .feature-block {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .testimonial-block {
+        width: fit-content;
+    }
+
+}
