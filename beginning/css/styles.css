@@ -241,9 +241,19 @@ footer img {
     }
 
     .hero {
-    
+        display: flex;
+        justify-content: center;
     }
 
+   .hero .hero-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero img {
+        justify-self: center;
+    }
+    
     .feature-container {
         flex-direction: column;
         justify-content: space-around;
@@ -264,4 +274,9 @@ footer img {
         width: fit-content;
     }
 
+    .team-container {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
