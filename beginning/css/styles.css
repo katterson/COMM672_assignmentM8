@@ -190,7 +190,7 @@ body.home {
 .event-block {
     border: 1px solid #efefef;
     box-shadow: 10px 10px 10px #efefef;
-    text-align: center;;
+    text-align: center;
 }
 .event-block img {
     width: 100%;
@@ -308,11 +308,11 @@ footer img {
         justify-content: center;
     }
 
-    /* About Page */
-    @media (max-width: 767px) {
-        .about {
-            text-align: center;
-        }
+        /* About Page */
+
+     .about {
+        text-align: center;
+    }
 
     .team-member {
         flex-direction: column;
@@ -325,5 +325,22 @@ footer img {
     .team-info {
         width: 100%;
     }
-}
+
+         /* Community Page */
+    
+   .event-block.featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "image"
+        "title"
+        "text";
+   }
+
+   .event-block {
+    grid-column: span 3;
+
+   }
+
 }
